@@ -38,7 +38,7 @@ navigation:
 disqus: "coguri"
 
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
-google_analytics: ""
+google_analytics: "UA-162138428-1"
 
 # Author information - author info at the bottom of the post
 author_name: "코구리"
