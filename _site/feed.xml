@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>코구리의 쉽생코</title>
-        <description>BlogInn is a bold theme for the Jekyll blogging platform. Available for purchase at ThemeForest.net.</description>
-        <link>https://justgoodthemes.com/</link>
-        <atom:link href="https://justgoodthemes.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 05 May 2020 23:10:33 +0900</pubDate>
-        <lastBuildDate>Tue, 05 May 2020 23:10:33 +0900</lastBuildDate>
+        <description>코구리의 쉽게 생각해보는 코딩</description>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Wed, 06 May 2020 01:36:50 +0900</pubDate>
+        <lastBuildDate>Wed, 06 May 2020 01:36:50 +0900</lastBuildDate>
         <generator>Jekyll v4.0.0</generator>
         
             <item>
@@ -36,7 +36,7 @@
 &lt;blockquote&gt;
   &lt;p&gt;Kotlin의 Enum은 Comparable 인터페이스를 구현하는 Abstract Class입니다. &lt;br /&gt;
 Comparable을 구현함으로써 비교가 가능해지지만, &lt;br /&gt;
-그것보다는 추상클래스임을 인지하는 것이 중요합니다.&lt;/p&gt;
+무엇보다도 &lt;strong&gt;&lt;mark&gt;추상클래스임을 인지&lt;/mark&gt;&lt;/strong&gt; 하는 것이 중요합니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -67,7 +67,8 @@ Comparable을 구현함으로써 비교가 가능해지지만, &lt;br /&gt;
 
 &lt;h4&gt;말이 어려워서 그렇지.. 아래 예제 보시면 금방 이해 되실 겁니다.&lt;/h4&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-kotlin&quot; data-lang=&quot;kotlin&quot;&gt;&lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;koName&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
     &lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;플라스틱&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
@@ -80,11 +81,11 @@ Comparable을 구현함으로써 비교가 가능해지지만, &lt;br /&gt;
     &lt;span class=&quot;c1&quot;&gt;//&quot;IRON&quot;, String&lt;/span&gt;
     &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;GarbageType1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;IRON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
 
-    &lt;span class=&quot;c1&quot;&gt;// zero-base index, PLASTIC은 첫 번째 임으로 0이 반환됩니다.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// zero-base index, PLASTIC은 첫 번째이므로 0이 반환됩니다.&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// 0, Int&lt;/span&gt;
     &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;GarbageType1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ordinal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
 
-    &lt;span class=&quot;c1&quot;&gt;// IRON 세 번째 임으로 2가 반환 됩니다.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// IRON 세 번째 이므로 2가 반환 됩니다.&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// 2, Int &lt;/span&gt;
     &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;GarbageType1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;IRON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ordinal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
 
@@ -109,7 +110,9 @@ Comparable을 구현함으로써 비교가 가능해지지만, &lt;br /&gt;
 &lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;     * type == GarbageType1.PLASTIC&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;     */&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enumValueOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;GarbageType1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;PLASTIC&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -159,11 +162,11 @@ Comparable을 구현함으로써 비교가 가능해지지만, &lt;br /&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Enum 의 고전적인 처리방법은 Enum을 Flag 삼아 조건분기를 처리하는 것입니다. &lt;br /&gt;
-아래 코드의 문제점은 Enum이 가지는 책임(쓰레기의 종류를 분류하는 책임)이 &lt;br /&gt; 
-sell함수에 전가되어 있다는 부분입니다.&lt;/p&gt;
+아래 코드의 문제점은 Enum이 가지는 &lt;strong&gt;&lt;mark&gt;책임(쓰레기의 종류를 분류하는 책임)이 &lt;br /&gt; sell함수에 전가&lt;/mark&gt;&lt;/strong&gt; 되어 있다는 부분입니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-kotlin&quot; data-lang=&quot;kotlin&quot;&gt;&lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;koName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;플라스틱&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
@@ -189,6 +192,7 @@ sell함수에 전가되어 있다는 부분입니다.&lt;/p&gt;
 
     &lt;span class=&quot;c1&quot;&gt;// 현재 가져온 고물의 종류와 무게로 kg당 얼마인지 가져옵니다.&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// Enum을 아이템을 분류하는 Flag로 삼아 조건 분기합니다.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 이 부분을 Enum에서 처리한다면 코드가 더 직관적으로 될 것입니다. &lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;nc&quot;&gt;GarbageType2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -216,35 +220,425 @@ sell함수에 전가되어 있다는 부분입니다.&lt;/p&gt;
         &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2&gt;Enum에게 함수 쥐어주기&lt;/h2&gt;
+&lt;h1&gt;Enum의 각 요소 별로 기능 정의하기&lt;/h1&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Enum이 Flag 이외의 기능을 하지 않는게 꼴보기 싫으신가요? &lt;del&gt;Enum이 꿀빤다…후…&lt;/del&gt; &lt;br /&gt;
-Enum 또한 추상클래스이기 때문에 기능을 가질 수 있습니다. &lt;br /&gt;
+&lt;p&gt;Enum이 Flag 이외의 기능을 하지 않는게 꼴보기 싫으신가요? &lt;del&gt;Enum이 꿀빤다…후…&lt;/del&gt; &lt;br /&gt;
+Enum 또한 &lt;strong&gt;&lt;mark&gt; 추상클래스이기 때문에 메소드를 가질 수 &lt;/mark&gt;&lt;/strong&gt; 있습니다. &lt;br /&gt;
 Enum에게 기능을 제공해 줌으로써, sell 함수에게 전가된 책임을 가져올 수 있습니다. &lt;br /&gt;
 &lt;del&gt;일해라 Enum d(^~^)b&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3&gt;1.멤버 변수로 추가하기&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;멤버변수로 함수를 받는 방법입니다. &lt;br /&gt;
+아래 sell부분이 굉장히 깔끔해진것을 볼 수 있습니다 &lt;br /&gt;
+문제점이 하나 있는데, &lt;strong&gt;&lt;mark&gt;다른 멤버변수에 접근할 수 없기 때문에&lt;/mark&gt;&lt;/strong&gt; &lt;br /&gt;
+아래 방법들보다는 활용도가 떨어집니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2&gt;인터페이스 상속&lt;/h2&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-kotlin&quot; data-lang=&quot;kotlin&quot;&gt;&lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;$a&quot;&lt;/span&gt;
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;koName&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;calculate&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 멤버변수로 추가해줍니다.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;플라스틱&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// this.koName 에 접근할 수 없음.&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kotlin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;GLASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;유리&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kotlin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}),&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;IRON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;고철&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kotlin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;nf&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;pair&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;
 
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;totalPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;총 가격은 $totalPrice 입니다.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 판매 가격 알아내기&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pair&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// 분류의 책임이 사라져 굉장히 클-린해졌습니다 !&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3&gt;2.인터페이스 구현&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Enum 또한 추상클래스이기 때문에, &lt;strong&gt;&lt;mark&gt;Interface를 구현할 수 있습니다.&lt;/mark&gt;&lt;/strong&gt; &lt;br /&gt;
+오버라이딩하기 때문에 멤버변수에 접근할 수 있고 최상위의 sell함수와 GarbageType 간의 의존성을 낮출 수 있어 굉장히 좋은 방법입니다. 다만 복잡도만 증가 시킬 수 있음으로 상황에 맞춰 사용하면 좋습니다 &lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c1&quot;&gt;// 인터페이스를 정의합니다.&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Calculable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;koName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Calculable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// enum이 Calculable 인터페이스를 상속 받습니다. &lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;플라스틱&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 각 멤버가 인터페이스에 정의된 메소드를 구현해줍니다. &lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;GLASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;유리&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kotlin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;IRON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;고철&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kotlin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;pair&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;totalPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;총 가격은 $totalPrice 입니다.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// 이제 sell 함수에서 Calculable 인터페이스를 인자로 받습니다.&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pair&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Calculable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// 분류의 책임이 사라져 굉장히 클-린해졌습니다 !&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3&gt;3.추상 메소드로 추가하기&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Enum은 &lt;strong&gt;&lt;mark&gt;추상클래스이기 때문에, 추상메소드를 선언 및 구현할 수 있습니다.&lt;/mark&gt;&lt;/strong&gt; &lt;br /&gt;
+오버라이딩하기때문에 멤버변수에 접근이 가능합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+&lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;koName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;플라스틱&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 각 멤버가 인터페이스에 정의된 메소드를 구현해줍니다.&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;GLASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;유리&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;IRON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;고철&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// !!!!*중요* 요소들을 선언한 후에는 반드시 세미콜론을 찍어야 기능을 정의할 수 있습니다!!!!!!&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;pair&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;totalPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;총 가격은 $totalPrice 입니다.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pair&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// 분류의 책임이 사라져 굉장히 클-린해졌습니다 !&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;price&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;price&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1&gt;Enum에 동일한 로직을 가지는 기능 추가하기&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;총 비용을 계산하는 calculate 함수의 경우에는 모두가 로직이 달랐음으로 &lt;br /&gt;
+각 요소에서 구현해주었습니다. 그러나 만약 &lt;strong&gt;&lt;mark&gt;로직이 동일한 경우에는 enum 클래스 자체에서 구현이 가능합니다&lt;/mark&gt;&lt;/strong&gt;
+가격 측정이 귀찮아서 10kg미만 가격에 모두 팔아버리는 dump() 메소드를 구현해보겠습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3&gt;1. Interface로 구현하기&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;calculate는 요소별로 로직이 다른 함수이고, dump는 모든 요소가 같은 로직을 공유합니다. &lt;br /&gt;
+각 요소별로 구현하는 것은 생산성과 가독성이 떨어짐으로 enum class 자체에서 구현합니다. &lt;br /&gt;
+&lt;strong&gt;&lt;mark&gt;요소 정의 끝에 세미콜론 찍는 것 잊으시면 안됩니다!&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c1&quot;&gt;// 인터페이스를 정의합니다.&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Calculable2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dump&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;koName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;dumpingPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 10kg미만일때 가격을 추가해줍니다&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Calculable2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;플라스틱&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 각 멤버가 인터페이스에 정의된 메소드를 구현해줍니다.&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;GLASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;유리&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kotlin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;IRON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;고철&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kotlin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// !!!!*중요* 요소들을 선언한 후에는 반드시 세미콜론을 찍어야 기능을 정의할 수 있습니다!!!!!!&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// 각 요소가 구현하지 않고, enum class 자체에서 구현합니다&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dump&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dumpingPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;pair&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// plastic의 멤버변수 dumpingPrice가 100원이므로 &quot;총 가격은 2000입니다.&quot;가 출력됩니다.&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;총 가격은 ${type.dump(weight)} 입니다.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3&gt;2. 추상클래스로 구현하기&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;동일한 로직을 가지는 경우에는 추상메소드로 선언하지 않고, 바로 메소드를 정의합니다. &lt;br /&gt;
+그 외에는 인터페이스와 동일합니다. &lt;strong&gt;&lt;mark&gt;요소 정의 끝에 세미콜론 찍는 것까지도요!&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c1&quot;&gt;// 인터페이스를 정의합니다.&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;koName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;dumpingPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 10kg미만일때 가격을 추가해줍니다&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;플라스틱&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 각 멤버가 인터페이스에 정의된 메소드를 구현해줍니다.&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;GLASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;유리&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kotlin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;IRON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;고철&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kotlin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// !!!!*중요* 요소들을 선언한 후에는 반드시 세미콜론을 찍어야 기능을 정의할 수 있습니다!!!!!!&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 동일한 로직을 사용하는 경우에는, abstract 하지 않고 바로 구현하면됩니다.&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dump&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dumpingPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;pair&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// plastic의 멤버변수 dumpingPrice가 100원이므로 &quot;총 가격은 2000입니다.&quot;가 출력됩니다.&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;총 가격은 ${type.dump(weight)} 입니다.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1&gt;Companion Object 사용하기&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Enum은 추상클래스이기 때문에 Companion Object를 사용 및 정의할 수 있습니다. &lt;br /&gt;
+다음은 Enum을 순회하면서 정보를 알려주는 print 함수를 정의했습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;// 인터페이스를 정의합니다.&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GarbageType8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;koName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;dumpingPrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 10kg미만일때 가격을 추가해줍니다&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;PLASTIC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;플라스틱&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 각 멤버가 인터페이스에 정의된 메소드를 구현해줍니다.&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;GLASS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;유리&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kotlin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;IRON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;고철&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kotlin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MAX_VALUE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EnumValueMisMathedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;companion&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;enumValues&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;GarbageType8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;()&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;${it.koName}은(는) 10kg에 ${it.dumpingPrice}&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;forEach&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;cm&quot;&gt;/**&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;     * Companion object이기 때문에 바로 접근이가능합니다&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;     * 플라스틱은(는) 10kg에 100&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;     * 유리은(는) 10kg에 150&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;     * 고철은(는) 10kg에 200 &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;     * 출력 &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;     */&lt;/span&gt;
+
+    &lt;span class=&quot;nc&quot;&gt;GarbageType8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1&gt;정리하기&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Enum은 추상클래스로서 인터페이스를 구현할 수도 있고, 추상메소드를 지닐 수 있습니다. &lt;br /&gt;
+단순히 Flag 역할과 상수를 담는 그릇이 아닌 파워풀한 Kotlin Enum을 사용해보시면 좋을 것 같습니다 (^~^)b&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;첫 글로 최근 프로젝트에서 Enum을 많이 써서 Enum을 썼더니 생각보다 시간이 많이들어서 &lt;br /&gt;
+어린이날이 다 날라갔네요.. ㅠㅠ… 다들 코로나 조심하세요~! &lt;br /&gt;
+피드백은 언제나 환영입니다! &lt;strong&gt;&lt;mark&gt;댓글 또는 메일로 주니어 개발자 지도 부탁드립니다 (__) 꾸벅&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4&gt;&lt;a href=&quot;https://github.com/banziha104/blogsample/tree/master/enumsample/src&quot;&gt;전체 소스 코드&lt;/a&gt; 주소입니다.&lt;/h4&gt;
 </description>
                 <pubDate>Tue, 05 May 2020 00:00:00 +0900</pubDate>
-                <link>https://justgoodthemes.com/2020/05/05/kotlin-enum/</link>
-                <guid isPermaLink="true">https://justgoodthemes.com/2020/05/05/kotlin-enum/</guid>
+                <link>http://localhost:4000/2020/05/05/kotlin-enum/</link>
+                <guid isPermaLink="true">http://localhost:4000/2020/05/05/kotlin-enum/</guid>
                 
                 <category>tips</category>
                 
