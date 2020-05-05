@@ -1,23 +1,17 @@
-<header class="navigation" role="banner">
-  <div class="navigation-wrapper">
-    <a href="{{ site.baseurl }}/" class="logo">
-      {% if site.logo %}
-      <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
-      {% else %}
-      <span>{{ site.title }}</span>
-      {% endif %}
-    </a>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
-        {% for page in site.pages %}
-          {% if page.title and page.main_nav != false %}
-          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
-  </div>
-</header>
+<header class="site-header outer">
+    <div class="inner">
+        <div class="site-header-inside">
+
+            {% if page.url == "/" %}
+            <h1 class="site-title"><a href="{{ site.baseurl }}/">{{site.title}}</a></h1>
+            {% else %}
+            <p class="site-title"><a href="{{ site.baseurl }}/">{{site.title}}</a></p>
+            {% endif %}
+
+            {% if site.tagline %}
+            <p class="site-description">{{site.tagline}}</p>
+            {% endif %}
+
+        </div><!-- .site-header-inside -->
+    </div><!-- .inner -->
+</header><!-- .site-header -->

@@ -1,142 +1,99 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="primary">
+    <article class="post post-full">
+        <header class="post-header">
+            <div class="post-header-wrap">
+                {% if page.banner_image %}
+                <div class="post-thumbnail">
+                    <img src="{{ "/images/posts/" | append: page.banner_image | prepend: site.baseurl }}"
+                        alt="{% if page.banner_image_alt %}{{ page.banner_image_alt }}{% else %}{{ page.title }}{% endif %}">
+                </div>
+                {% endif %}
+                <h1 class="post-title outer">{{page.title}}</h1>
+            </div>
+            <div class="post-meta outer">
+                by <span class="post-author">{{site.author_name}}</span> on <time class="published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+            </div>
+        </header><!-- .post-header -->
+        <div class="post-content inner-small outer">
+            {{content}}
+        </div><!-- .post-content -->
+        <footer class="post-footer inner-small outer">
+            <div class="post-share">
+                <span>Share:</span>
+                <a class="button button-icon button-fill-horz"
+                    href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&amp;url={{ site.url }}{{ page.url }}"
+                    target="_blank" rel="noopener">{% include icons/twitter.html %}<span
+                        class="screen-reader-text">Share on Twitter</span></a>
+                <a class="button button-icon button-fill-horz"
+                    href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&amp;t={{ page.title | uri_escape }}"
+                    target="_blank" rel="noopener">{% include icons/facebook.html %}<span
+                        class="screen-reader-text">Share on Facebook</span></a>
+            </div>
+            {% if page.tags.size > 0 %}
+            <div class="post-tags">
+                <span>Tags:</span>
+                {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_escape }}" rel="tag">{{ tag }}</a>{% endfor %}
+            </div>
+            {% endif %}
+        </footer><!-- .post-footer -->
+    </article><!-- .post -->
+    <div class="author-box outer">
+        <div class="inner-small">
+            <div class="author-info">
+                <div class="author-avatar" style="background-image: url({{ site.author_image }})">
+                    <span class="screen-reader-text">{{ site.author_name }}'s Picture</span>
+                </div>
+                <div class="author-details">
+                    <h2 class="author-title line-accent">About {{ site.author_name }}</h2>
+                    <p class="author-bio">{{ site.author_bio }}</p>
+                    {% if site.author_location or site.author_url %}
+                    <p class="author-links">
+                        <span class="author-location">{% include icons/map-pin.html %} {{ site.author_location }}</span>
+                        <span class="author-website">{% include icons/link.html %} <a href="{{ site.author_url }}" target="_blank" rel="noopener"> {{ site.author_url }}</a></span>
+                    </p>
+                    {% endif %}
+                </div>
+            </div><!-- .author-info -->
+        </div><!-- .inner-small -->
+    </div><!-- .author-box -->
+    <nav class="post-navigation">
+        <h2 class="screen-reader-text">Read Next</h2>
+        {% if page.previous.url %}
+        <div class="nav-previous">
+            <div class="nav-inside inner-small outer">
+                {% if page.previous.banner_image %}
+                <a href="{{ site.baseurl }}{{page.previous.url}}" class="nav-thumb"
+                    style="background-image: url({{ "/images/posts/" | append: page.previous.banner_image }})"></a>
+                {% endif %}
+                <div class="nav-before">Previous</div>
+                <h3 class="nav-title"><a href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a>
+                </h3>
+                <div class="nav-date">{{page.previous.date | date: "%B %-d, %Y"}}</div>
+            </div><!-- .nav-inside -->
+        </div><!-- .nav-previous -->
+        {% endif %}
+        {% if page.next.url %}
+        <div class="nav-next">
+            <div class="nav-inside inner-small outer">
+                {% if page.next.banner_image %}
+                <a href="{{ site.baseurl }}{{page.next.url}}" class="nav-thumb"
+                    style="background-image: url({{ "/images/posts/" | append: page.next.banner_image }})"></a>
+                {% endif %}
+                <div class="nav-before">Next</div>
+                <h3 class="nav-title"><a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a></h3>
+                <div class="nav-date">{{page.next.date | date: "%B %-d, %Y"}}</div>
+            </div><!-- .nav-inside -->
+        </div><!-- .nav-next -->
+        {% endif %}
+    </nav><!-- .post-navigation -->
 
-<div class="post-header-container {% if page.cover %}has-cover{% endif %}" {% if page.cover %}style="background-image: url({{ page.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if page.cover %}has-cover{% endif %}">
-    <header class="post-header">
-      <h1 class="title">{{ page.title }}</h1>
-      <p class="info">by <strong>{{ page.author }}</strong></p>
-    </header>
-  </div>
-</div>
-
-<div class="wrapper">
-
-{% unless page.cover %} {% include page_divider.html %} {% endunless %}
-
-<section class="post-meta">
-  <div class="post-date">{{ page.date | date: "%B %-d, %Y" }}</div>
-  <div class="post-categories">
-  {% if page.categories.size > 0 %}in {% for cat in page.categories %}
-    {% if site.jekyll-archives %}
-    <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-    {% else %}
-    <a href="{{ site.baseurl }}/posts/#{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+    {% if site.disqus %}
+    {% include disqus.html %}
     {% endif %}
-  {% endfor %}{% endif %}
-  </div>
-</section>
 
-<article class="post-content">
-  {{ content }}
-</article>
+</div><!-- .primary -->
 
-{% if site.jekyll-archives %}
-{% if page.tags.size > 0 %}
-<section class="tags">
-  <strong>Tags:</strong> {% for tag in page.tags %}<a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% if forloop.last == false %},&nbsp;{% endif %}{% endfor %}
-</section>
-{% endif %}
-{% endif %}
-
-<section class="rss">
-  <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
-</section>
-
-<section class="share">
-  <span>Share: </span>
-  {% for social in site.social %}
-    {% capture full_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
-    {% if social.name == "Twitter" and social.share == true %}
-      <a href="//twitter.com/share?text={{ page.title | cgi_escape }}&url={{ full_url | cgi_escape}}&via={{social.username}}"
-        onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
-        <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
-      </a>
-    {% endif %}
-    {% if social.name == "Facebook" and social.share == true %}
-      <a href="//www.facebook.com/sharer.php?t={{ page.title | cgi_escape }}&u={{ full_url | cgi_escape}}"
-        onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
-        <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
-      </a>
-    {% endif %}
-    {% if social.name == "Google+" and social.share == true %}
-      <a href="//plus.google.com/share?title={{ page.title | cgi_escape }}&url={{ full_url | cgi_escape}}"
-        onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
-        <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
-      </a>
-    {% endif %}
-    {% if social.name == "LinkedIn" and social.share == true %}
-      <a href="//www.linkedin.com/shareArticle?mini=true&url={{ full_url | cgi_escape}}"
-        onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
-        <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
-      </a>
-    {% endif %}
-    {% if social.name == "Pinterest" and social.share == true %}
-      <a href="//www.pinterest.com/pin/create/button/?description={{ page.title | cgi_escape }}&url={{ full_url | cgi_escape}}&media={{ site.url }}{% if page.cover %}{{ page.cover | prepend: site.baseurl  }}{% elsif site.cover %}{{ site.cover | prepend: site.baseurl }}{% else %}{{ site.logo | prepend: site.baseurl }}{% endif %}"
-        onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
-        <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
-      </a>
-    {% endif %}
-    {% if social.name == "Reddit" and social.share == true %}
-      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('{{ full_url }}') + '&title={{page.title}}'; return false">
-        <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
-      </a>
-    {% endif %}
-    {% if social.name == "Hacker News" and social.share == true %}
-      <a href="//news.ycombinator.com/submitlink" onclick="window.location = '//news.ycombinator.com/submitlink?u=' + encodeURIComponent('{{ full_url }}') + '&t={{page.title}}'; return false">
-        <i class="fa fa-{{ social.icon | remove_first: '-square' }} fa-lg"></i>
-      </a>
-    {% endif %}
-  {% endfor %}
-</section>
-{% if site.inter_post_navigation == true %}
-	<section class="post-navigation">
-		<span class="prev-post">
-			{% if page.previous.url %}
-				<a href="{{page.previous.url | prepend: site.baseurl}}">
-					<span class="fa-stack fa-lg">
-						<i class="fa fa-square fa-stack-2x"></i>
-						<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-					</span>
-					<span class="page-number">{{page.previous.title}}</span>
-				</a>
-			{% endif %}
-		</span>
-		<span class="next-post">
-			{% if page.next.url %}
-				<a href="{{page.next.url | prepend: site.baseurl}}">
-					<span class="page-number">{{page.next.title}}</span>
-					<span class="fa-stack fa-lg">
-						<i class="fa fa-square fa-stack-2x"></i>
-						<i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-					</span>
-				</a>
-			{% endif %}
-		</span>
-	</section>
-{% endif %}
-
-{% if site.disqus_shortname %}
-{% unless page.disqus_disabled %}
-<section class="disqus">
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    var disqus_shortname = '{{ site.disqus_shortname }}';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
-{% endunless %}
-{% endif %}
-
-</div>
-</div>
+{% include sidebar.html %}
