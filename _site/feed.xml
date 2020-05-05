@@ -3,10 +3,10 @@
     <channel>
         <title>코구리의 쉽생코</title>
         <description>코구리의 쉽게 생각해보는 코딩</description>
-        <link>https://justgoodthemes.com/</link>
-        <atom:link href="https://justgoodthemes.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 06 May 2020 01:42:26 +0900</pubDate>
-        <lastBuildDate>Wed, 06 May 2020 01:42:26 +0900</lastBuildDate>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Wed, 06 May 2020 01:44:16 +0900</pubDate>
+        <lastBuildDate>Wed, 06 May 2020 01:44:16 +0900</lastBuildDate>
         <generator>Jekyll v4.0.0</generator>
         
             <item>
@@ -637,8 +637,8 @@ Enum에게 기능을 제공해 줌으로써, sell 함수에게 전가된 책임�
 &lt;h4&gt;&lt;a href=&quot;https://github.com/banziha104/blogsample/tree/master/enumsample/src&quot;&gt;전체 소스 코드&lt;/a&gt; 주소입니다.&lt;/h4&gt;
 </description>
                 <pubDate>Tue, 05 May 2020 00:00:00 +0900</pubDate>
-                <link>https://justgoodthemes.com/2020/05/05/kotlin-enum/</link>
-                <guid isPermaLink="true">https://justgoodthemes.com/2020/05/05/kotlin-enum/</guid>
+                <link>http://localhost:4000/2020/05/05/kotlin-enum/</link>
+                <guid isPermaLink="true">http://localhost:4000/2020/05/05/kotlin-enum/</guid>
                 
                 <category>tips</category>
                 
