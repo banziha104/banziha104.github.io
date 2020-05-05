@@ -3,7 +3,7 @@ layout: post
 title:  "Kotlin의 Enum 어디까지 써봤니?"
 date:   2020-05-05
 banner_image: kotlin/2020-05-05-kotlin-enum.png
-tags: [tips, work]
+tags: [kotlin, enum]
 ---
 
 > *죄송합니다. 이거 보여주려고 반말로 어그로 끌었습니다.*<br>
