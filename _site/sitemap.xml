@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://justgoodthemes.com/2020/05/05/kotlin-enum/</loc>
-<lastmod>2020-05-05T00:00:00+09:00</lastmod>
-</url>
-<url>
-<loc>https://justgoodthemes.com/404.html</loc>
-</url>
-<url>
-<loc>https://justgoodthemes.com/about/</loc>
-</url>
-<url>
-<loc>https://justgoodthemes.com/tags/</loc>
-</url>
-<url>
-<loc>https://justgoodthemes.com/</loc>
-</url>
-<url>
-<loc>https://justgoodthemes.com/style-guide/</loc>
-</url>
+    
+    <url>
+        <loc>http://localhost:4000/2020/05/05/kotlin-enum/</loc>
+        
+        <lastmod>2020-05-05T00:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>daily</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
 </urlset>
