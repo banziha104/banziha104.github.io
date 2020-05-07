@@ -575,6 +575,6 @@ fun main() {
 
  첫 글로 최근 프로젝트에서 Enum을 많이 써서 Enum을 썼더니 생각보다 시간이 많이들어서 <br>
 어린이날이 다 날라갔네요.. ㅠㅠ... 다들 코로나 조심하세요~! <br>
-피드백은 언제나 환영입니다! __<mark>댓글 또는 메일로 주니어 개발자 지도 부탁드립니다 (__) 꾸벅</mark>__
+__<mark> 피드백은 언제나 환영입니다! (__) 꾸벅</mark>__
 
 #### [전체 소스 코드](https://github.com/banziha104/blogsample/tree/master/enumsample/src) 주소입니다.  
