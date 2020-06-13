@@ -2,15 +2,9 @@
 layout: page
 title: 코구리의 쉽생코
 description: 쉽게 생각해보는 코딩
-banner_image: aboutPage.jpg
+banner_image: abougPage.jpeg
 ---
 
-**John Doe** is a Senior Art Director from [Vilnius](https://en.wikipedia.org/wiki/Vilnius), Lithuania. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.
+분당에 생태계를 구축한 잡식성 개발자, 모바일을 주식으로 먹고살며, 부식으로 Docker, k8s 등 백엔드와 Sketch, After Effects 등 UI/UX, 모션인포그래픽을 먹고삽니다. <br/> PS:요즘은 머신러닝도 취급하기 시작했습니다 <br>
 
-His work has been recognized by Communication Arts, Print, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. Graphic Design USA named him a person to watch in 2015.
-
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
-
-As a hobby, John Doe authors the most influential design blog in Lithuania with over 100,000 page views a month. He lives in Vilnius with his beautiful wife, two boys and one girl.
-
-*Thank You for reading!*
+더 긴글은 준비중입니다(^~^b)

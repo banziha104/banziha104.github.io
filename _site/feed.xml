@@ -5,8 +5,8 @@
         <description>코구리의 쉽게 생각해보는 코딩</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 06 May 2020 02:35:43 +0900</pubDate>
-        <lastBuildDate>Wed, 06 May 2020 02:35:43 +0900</lastBuildDate>
+        <pubDate>Thu, 07 May 2020 11:08:49 +0900</pubDate>
+        <lastBuildDate>Thu, 07 May 2020 11:08:49 +0900</lastBuildDate>
         <generator>Jekyll v4.0.0</generator>
         
             <item>
@@ -632,7 +632,7 @@ Enum에게 기능을 제공해 줌으로써, sell 함수에게 전가된 책임�
 
 &lt;p&gt;첫 글로 최근 프로젝트에서 Enum을 많이 써서 Enum을 썼더니 생각보다 시간이 많이들어서 &lt;br /&gt;
 어린이날이 다 날라갔네요.. ㅠㅠ… 다들 코로나 조심하세요~! &lt;br /&gt;
-피드백은 언제나 환영입니다! &lt;strong&gt;&lt;mark&gt;댓글 또는 메일로 주니어 개발자 지도 부탁드립니다 (__) 꾸벅&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;strong&gt;&lt;mark&gt; 피드백은 언제나 환영입니다! (__) 꾸벅&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h4&gt;&lt;a href=&quot;https://github.com/banziha104/blogsample/tree/master/enumsample/src&quot;&gt;전체 소스 코드&lt;/a&gt; 주소입니다.&lt;/h4&gt;
 </description>
