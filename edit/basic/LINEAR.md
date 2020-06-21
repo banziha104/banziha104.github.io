@@ -31,11 +31,17 @@
         - 잔차(rasiual) : e_i =y_i - ^y_i 
         - 잔차를 최소화하는 방향으로 추정 
         - 잔차의 제곱합을 최소화하는 구성 : <img src="https://latex.codecogs.com/gif.latex?SSE = \sum_{i=1}^{n} e_i^2 " /> 
-            
             - 잔차의 제곱합을 최소화 시키는 이유
                 - 잔차의 합이 0이되는 해는 무수히 많음.
                 - 잔차의 절대값의 합은 미분이 불가능한 형태
                 - 잔차의 제곱합은 미분이 가능한 형태로 유일한 해를 찾을 수 있음.
+                
+                
+<br>
+
+# 회귀계수 추정 
+
+- SSE :  <img src="https://latex.codecogs.com/gif.latex?\hat(B_0)" /> 
                 
                 
                 
