@@ -5,16 +5,14 @@
         <description>코구리의 쉽게 생각해보는 코딩</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 07 May 2020 11:08:49 +0900</pubDate>
-        <lastBuildDate>Thu, 07 May 2020 11:08:49 +0900</lastBuildDate>
+        <pubDate>Sun, 21 Jun 2020 15:32:19 +0900</pubDate>
+        <lastBuildDate>Sun, 21 Jun 2020 15:32:19 +0900</lastBuildDate>
         <generator>Jekyll v4.0.0</generator>
         
             <item>
                 <title>Kotlin의 Enum 어디까지 써봤니?</title>
                 <description>&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;죄송합니다. 이거 보여주려고 반말로 어그로 끌었습니다.&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;내가 알던 그 기능 없는 찐따 깡통 같던 옛날 자바의 Enum 맞나?&lt;/em&gt; &lt;br /&gt;
-&lt;em&gt;Enum 은 전설이다.. 가슴이 웅장해진다..&lt;/em&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;em&gt;Kotlin Enum에 관한 고찰&lt;/em&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;!--more--&gt;

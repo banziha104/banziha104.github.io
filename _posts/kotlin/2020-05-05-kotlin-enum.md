@@ -6,7 +6,7 @@ banner_image: kotlin/2020-05-05-kotlin-enum.png
 tags: [kotlin, enum]
 ---
 
-> *Kotlin Enum*<br>
+> *Kotlin Enum에 관한 고찰*<br>
 
 <!--more-->
 
