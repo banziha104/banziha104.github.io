@@ -6,9 +6,7 @@ banner_image: kotlin/2020-05-05-kotlin-enum.png
 tags: [kotlin, enum]
 ---
 
-> *죄송합니다. 이거 보여주려고 반말로 어그로 끌었습니다.*<br>
-> *내가 알던 그 기능 없는 찐따 깡통 같던 옛날 자바의 Enum 맞나?* <br/>
-> *Enum 은 전설이다.. 가슴이 웅장해진다..*
+> *Kotlin Enum*<br>
 
 <!--more-->
 
