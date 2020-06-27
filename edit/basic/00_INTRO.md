@@ -43,7 +43,7 @@
         - 새로 들어온 데이터의 주변 k개의 데이터의 class로 분류하는 기법 
     - Neural Network
         - 입력, 은닉, 출력층으로 구성된 모형으로서 각 층을 연결하는 노드의 가중치를 업데이트하면서 학습 
-    - SVM (Support Vector Machine)
+    - SVM (Sup**port Vector Machine)
         - Class 간의 거리가 최대로 되도록 decision boundary를 만드는 방법 
     - Ensemble Leaning 
         - 여러 개의 모델(classifier or base learner)을 결합하여 사용하는 모델 
