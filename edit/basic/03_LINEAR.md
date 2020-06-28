@@ -57,7 +57,7 @@
     - 즉, SSE가 작으면 작을수록 좋은 모델이라고 볼 수 있음.
     - MSE는 SSE를 표준화한 개념.
     - SST(Total sum of squares) 
-    - SSE( Error sum of squares)
+    - SSE(Error sum of squares)
     - SSR(Regressiomn sum of squares)  
     - 회귀 분석은 결국 Y의 변동성을 얼마나 독립변수가 잘 설명하느냐가 중요
     - 변수가 여러 개일 때 각각 Y를 설명하는 변동성이 크면 좋은 변수 -> p-value 자연스레 낮아짐.
@@ -124,7 +124,7 @@
     - R2에 변수 수만큼 penalty를 주는 지표가 Adjusted R2
     - 1 - (SSE/(n-p)) / (SST/(n-1))
     
-- AICㅌ
+- AIC
     - 모델의 성능지표로서 MSE에 변수 수 만큼 penalty를 주는 지표
     - 일반적으로 회귀분석에서 Model Selection 할 때 많이 쓰이는 지표
     - AIC = n ln(SSE/n) + 2(p+1)
