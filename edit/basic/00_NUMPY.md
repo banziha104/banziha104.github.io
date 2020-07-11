@@ -105,6 +105,24 @@ np.hstack([x,grid]) # 배열을 수평으로 쌓음
 
 # 분할하기
 
+upper, lower = np.split(grid,[2)
 
+```
+
+<br>
+
+# 유니버셜 함수
+
+```jupyterpython
+x = np.array([-2,-1,0,1,2])
+y = np.zeros(10)
+x2 = x + 5 # 5씩 더함
+x3 = np.abs(x) # 절대값 함수
+x4 = np.sin(x) # 삼각함수
+x5 = np.exp(x) # 지수함수
+x6 = np.log(x) # 로그함수
+x7 = np.power(2,x,out=y[::2]) # 출력지정 
+np.add.reduce(x) # x의 모든 요소 합
+np.multiply.reduce(x) # x의 모든 요소의 곱 
 
 ```
