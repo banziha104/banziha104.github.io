@@ -114,6 +114,7 @@ upper, lower = np.split(grid,[2)
 # 유니버셜 함수
 
 ```jupyterpython
+
 x = np.array([-2,-1,0,1,2])
 y = np.zeros(10)
 x2 = x + 5 # 5씩 더함
@@ -121,8 +122,19 @@ x3 = np.abs(x) # 절대값 함수
 x4 = np.sin(x) # 삼각함수
 x5 = np.exp(x) # 지수함수
 x6 = np.log(x) # 로그함수
-x7 = np.power(2,x,out=y[::2]) # 출력지정 
-np.add.reduce(x) # x의 모든 요소 합
-np.multiply.reduce(x) # x의 모든 요소의 곱 
+# x7 = np.power(2,x,out=y[::2]) # 출력지정
+x7 = np.add.reduce(x) # x의 모든 요소 합
+x8 = np.multiply.reduce(x) # x의 모든 요소의 곱
+x9 = np.min(x) #최소값
+x10 = np.max(x) #최대값 
+x11 = x.min(axis=0) # 열에 관한 최소값 
 
 ```
+
+<br>
+
+# 브로드케스팅 
+
+- 두 배열의 차원 수가 다르면 작은 수의 차원을 가진 배열 형상의 앞쪽을 1로 채운다
+- 두 배열의 형상이 어떤 차원에서도 일치하지 않는다면 해당 차원의 형상이 1인 배열이 다른 형상과 일치하도록 늘어난다.
+- 임의의 차원에서 크기가 일치하지 않고 1도 아니라면 오류 발생 
