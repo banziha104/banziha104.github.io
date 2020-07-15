@@ -107,3 +107,31 @@ plt.scatter(x,y,c=colors,s=sizes,alpha=0.3,cmap='viridis')
 plt.colorbar() # 색상 척도 표시
 
 ```
+
+<br>
+
+- 오차 막대 
+
+```python
+x = np.linspace(0,10,50)
+dy = 0.8
+y = np.sin(x) + dy * np.random.randn(50)
+plt.errorbar(x,y,yerr=dy,fmt='.k')
+
+```
+
+- 히스토그램 
+
+```python
+
+data = np.random.randn(1000)
+# plt.hist(data) # 1차원
+plt.hist2d(x,y,bins=30,cmap='Blues')
+cd = plt.colorbar()
+cd.set_label('counts in bin')
+
+```
+
+<br> 
+
+- 
