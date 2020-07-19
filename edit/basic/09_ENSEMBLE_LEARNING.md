@@ -2,7 +2,7 @@
 
   > 여러 개의 기본모델을 활용하여 하나의 새로운 모델을 만들어내는 개념
 
-- 기본 모델
+- 기본 모
     - weak learner
     - classifier
     - base learner
@@ -73,5 +73,11 @@
     - 이를 반복하면 small error가 만들어짐.
     - Negative gradient(residual)을 최소화 시키면서 학습 시키기 때문에 gradient boosting이라 부름.
 - Gradient Boosting 종류 
-    -  
+    -  XGBoost
+        -  Regularization Term이 추가 되어서 모델이 과적합 되는 것을 막아줌 
+    - LightGBM 
+        - leaf-wise loss 사용 , Xgboost 대비 2배 이상 빠른 속도, 
+        - Overfitting에 민감하여, 대량의 학습데이터가 필요함.
+    - 
+        
     
