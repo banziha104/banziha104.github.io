@@ -58,4 +58,3 @@
   - Amazon SageMaker
   - GCP Vertex AI
   - Azure Machine Learning
-  - 
