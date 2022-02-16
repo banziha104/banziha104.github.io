@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site title
-title: "코구리의 쉽생코"
+title: "쉽생코"
 
 # Tagline next to the site title
 tagline: "쉽게 생각해보는 코딩"
 
 # A description of your site for social meta tag, search engines, and feed.xml
-description: "코구리의 쉽게 생각해보는 코딩"
+description: "쉽게 생각해보는 코딩"
 
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl:
@@ -41,8 +41,8 @@ disqus: "coguri"
 google_analytics: "UA-162138428-1"
 
 # Author information - author info at the bottom of the post
-author_name: "코구리"
-author_bio: "분당에 생태계를 구축한 잡식성 개발자, 모바일을 주식으로 먹고살며, 부식으로 Docker, k8s 등 백엔드와 Sketch, After Effects 등 UI/UX, 모션인포그래픽을 먹고삽니다. <br/> PS:요즘은 머신러닝도 취급하기 시작했습니다"
+author_name: "banziha104"
+author_bio: "개발중"
 author_url:  "http://banziha104.github.io"
 author_location: "Pangyo, Republic of Korea"
 author_image: /images/authorimage.jpeg
