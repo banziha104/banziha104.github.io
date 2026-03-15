@@ -1,18 +1,11 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site title
-title: "쉽생코"
+title: "Woke The Wrong Korean"
 
 # Tagline next to the site title
-tagline: "쉽게 생각해보는 코딩"
+tagline: "Don't piss off a Korean in Banziha"
 
 # A description of your site for social meta tag, search engines, and feed.xml
-description: "쉽게 생각해보는 코딩"
+description: "A Korean developer who turned noise complaints into case law. AI, Engineering, and a little bit of chaos."
 
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl:
@@ -35,16 +28,16 @@ navigation:
   url: /tags/
 
 # The shortname for your Disqus site to enable comments.
-disqus: "coguri"
+disqus: "banziha104"
 
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 google_analytics: "UA-162138428-1"
 
-# Author information - author info at the bottom of the post
-author_name: "banziha104"
-author_bio: "개발중"
-author_url:  "http://banziha104.github.io"
-author_location: "Pangyo, Republic of Korea"
+# Author information
+author_name: "Young-jun Lee"
+author_bio: "Server Dev In Snow. I build things, break systems, and occasionally make legal history."
+author_url: "http://banziha104.github.io"
+author_location: "Seongnam, Republic of Korea"
 author_image: /images/authorimage.jpeg
 
 # Sidebar Add banner
