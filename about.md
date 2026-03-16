@@ -32,5 +32,13 @@ So I'm filing a patch.
 **Currently preparing a Pull Request to the Korean Supreme Court.**
 
 Young-jun Lee. Server Developer and AI Architect at SNOW Corp.
+
+I don't define what I am. I become what the problem needs.
+I don't find problems that fit my tools.
+I find tools that fit the problem — and if they don't exist,
+I learn or build them.
+Whether that's AI, litigation, construction, or trading.
+Or anything else that gets the job done.
+
 I fix broken systems. Sometimes the system is a server.
 Sometimes it's the law.
