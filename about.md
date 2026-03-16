@@ -29,8 +29,8 @@ A bug that's been there for decades.
 
 So I'm filing a patch.
 
-**Currently submitting a Pull Request to the Korean Supreme Court.**
+**Currently preparing a Pull Request to the Korean Supreme Court.**
 
-Young-jun Lee. Server developer and AI Architecture at SNOW Corp.
+Young-jun Lee. Server Developer and AI Architect at SNOW Corp.
 I fix broken systems. Sometimes the system is a server.
 Sometimes it's the law.
