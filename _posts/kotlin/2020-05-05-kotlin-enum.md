@@ -6,7 +6,11 @@ banner_image: kotlin/2020-05-05-kotlin-enum.png
 tags: [kotlin, enum]
 ---
 
-> *Kotlin Enum에 관한 고찰*<br>
+*[Back when I wrote tutorials instead of filing lawsuits](https://banziha104.github.io/about/)*
+
+---
+
+# *Kotlin Enum에 관한 고찰*<br>
 
 <!--more-->
 
