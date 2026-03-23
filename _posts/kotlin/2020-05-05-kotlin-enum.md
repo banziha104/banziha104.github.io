@@ -16,6 +16,8 @@ tags: [kotlin, enum]
 
 <br>
 
+*Back when I wrote tutorials instead of filing lawsuits.*
+
 ## Kotlin Enum
     
  Enum 클래스는 많은 언어에서 지원하고 있으며, 조금 C언어나 Java 1.5 버전등 오래된 언어에서는 주로 대부분 데이터 타입을 분류하는 <mark>Flag</mark> 역할과 <mark>상수를 저장하는</mark> 역할 두 가지의 역할로 사용하고 있습니다. <br>
