@@ -6,17 +6,15 @@ banner_image: kotlin/2020-05-05-kotlin-enum.png
 tags: [kotlin, enum]
 ---
 
-*Back when I wrote tutorials instead of filing lawsuits.*
+*[Back when I wrote tutorials instead of filing lawsuits](https://banziha104.github.io/about/)*
 
 ---
 
-> *Kotlin Enum에 관한 고찰*<br>
+# *Kotlin Enum에 관한 고찰*<br>
 
 <!--more-->
 
 <br>
-
-*Back when I wrote tutorials instead of filing lawsuits.*
 
 ## Kotlin Enum
     
