@@ -5,6 +5,25 @@ description: The Korean who climbed out of Banziha
 banner_image: aboutPage.jpeg
 ---
 
+→ [What's on this blog](#blog) · [What's going on](#story)
+
+<h2 id="blog">What's on this blog</h2>
+
+**This Korean's secret weapon** — *How I think*
+> How I see the world. And why most people are looking at the wrong thing.
+
+**This Korean's survival guide** — *How I live*
+> On teams, trust, and the people I'd still go fishing with.
+
+**This Korean's footprint** — *What I've done*
+> What I've built
+
+**This Korean's raid** — *What I think*
+> Ideas from a server engineer with no GPU. Use them if you want.
+
+
+<h2 id="story">What's Going On?</h2>
+
 # What's Going On?
 
 For 20 months, my upstairs neighbor made my life hell.
