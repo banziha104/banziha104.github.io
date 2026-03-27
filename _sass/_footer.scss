@@ -1,8 +1,8 @@
 /**
- * 6. Site Footer
+ * 6. Site Footer — Hunting Ground (Daylight)
  */
 .site-footer {
-    background-color: $gray-dark;
+    background-color: $bg-surface;
 
     .inner {
         position: relative;
@@ -10,7 +10,7 @@
 }
 
 .social-links {
-    border-bottom: 2px solid rgba($gray,.15);
+    border-bottom: 1px solid $border;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -22,7 +22,7 @@
     padding: 2.66667em 0;
 
     .button {
-        color: $gray-light;
+        color: $text-muted;
         margin: 0 2px 4px;
     }
 }
@@ -33,7 +33,7 @@
     text-align: center;
 
     .button {
-        color: $gray-light;
+        color: $text-muted;
         margin-top: 2.14285em;
     }
 }
@@ -46,6 +46,7 @@
 
     a {
         text-decoration: none;
+        border-bottom: none;
     }
 }
 

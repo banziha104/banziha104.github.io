@@ -1,9 +1,9 @@
 /**
  * 5. Content
- * 5.1 Posts and Pages
+ * 5.1 Posts and Pages — Hunting Ground (Daylight)
  */
 .post {
-    background-color: #fff;
+    background-color: $white;
     margin-bottom: 3.33333em;
     padding-bottom: 2.22222em;
 
@@ -33,6 +33,11 @@
     a {
         color: inherit;
         text-decoration: none;
+        border-bottom: none;
+
+        &:hover {
+            color: $accent;
+        }
     }
 }
 
@@ -41,14 +46,15 @@
     position: relative;
 
     .post-title {
-        background-color: $accent;
+        background-color: $white;
         clear: both;
-        color: #fff;
+        color: $black;
         float: left;
         margin: 1.66667em 0 0;
         max-width: 75%;
         padding-bottom: 0.83333em;
         padding-top: 0.83333em;
+        border-bottom: 2px solid $accent;
     }
 
     .post-thumbnail + .post-title {
@@ -59,9 +65,9 @@
 }
 
 .post-meta {
-    background-color: $accent-alt;
+    background-color: $bg-surface;
     clear: both;
-    color: #fff;
+    color: $text-muted;
     font-size: 12px;
     float: left;
     letter-spacing: 1px;
@@ -69,11 +75,12 @@
     padding-bottom: 1.25em;
     padding-top: 1.25em;
     text-transform: uppercase;
-  
+
     a {
         color: inherit;
         font-weight: 700;
         text-decoration: none;
+        border-bottom: none;
     }
 }
 
@@ -124,27 +131,28 @@
 }
 
 .post-tags {
-    border-top: 2px solid rgba($gray-light,.3);
+    border-top: 1px solid $border;
     padding-top: 2.72727em;
 
     a {
-        background-color: rgba($gray-light,.3);
-        color: $gray;
+        background-color: $bg-surface;
+        color: $text-muted;
         padding: 0.27273em 0.90909em;
         text-decoration: none;
+        border-bottom: none;
         -webkit-transition: .3s;
         transition: .3s;
 
         &:hover {
-            background-color: $accent;
-            color: #fff;
+            background-color: $black;
+            color: $bg;
         }
     }
 }
 
 /* Author box */
 .author-box {
-    background-color: #fff;
+    background-color: $white;
     margin-bottom: 1.11111em;
     padding-bottom: 2.22222em;
     padding-top: 2.22222em;
@@ -177,7 +185,7 @@
 }
 
 .author-links {
-    color: $gray-light;
+    color: $text-dim;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -198,6 +206,7 @@
     a {
         color: inherit;
         text-decoration: none;
+        border-bottom: none;
 
         &:hover {
             color: $accent;
@@ -235,19 +244,20 @@
 
 .archive-tag-list a,
 .archive-top-link {
-    background-color: rgba($gray-light,.3);
-    color: $gray;
+    background-color: $bg-surface;
+    color: $text-muted;
     letter-spacing: 1px;
     line-height: 1.5;
     padding: 0.33333em 0.83333em;
     text-decoration: none;
     text-transform: uppercase;
+    border-bottom: none;
     -webkit-transition: .3s;
     transition: .3s;
 
     &:hover {
-        background-color: $accent;
-        color: #fff;
+        background-color: $black;
+        color: $bg;
     }
 }
 
@@ -272,7 +282,7 @@
 }
 
 .archive-post-meta {
-    color: $gray;
+    color: $text-muted;
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 1.5;
