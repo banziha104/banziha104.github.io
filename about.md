@@ -24,6 +24,8 @@ banner_image: aboutPage.jpeg
 > Ideas from a server engineer with no GPU.
 > Use them if you want.
 
+--- 
+
 <h1 id="story">What's Going On?</h1>
 
 For 20 months, my upstairs neighbor made my life hell.
