@@ -1,1 +1,24 @@
-# Created by .ignore support plugin (hsz.mobi)
+# 지킬의 빌드 결과물 (항상 재생성되므로 제외)
+_site/
+
+# 지킬의 증분 빌드 캐시
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache
+
+# 의존성 패키지 관리 도구 (Bundler) 관련
+.bundle/
+vendor/
+bin/
+
+# 로그 파일
+*.log
+
+# 운영체제 생성 파일 (Mac, Windows)
+.DS_Store
+Thumbs.db
+
+# 환경 설정 파일 (민감한 정보가 포함된 경우)
+.env
+.idea
+.cluade
