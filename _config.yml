@@ -7,7 +7,7 @@ tagline: "Don't piss off this Korean who climbed out of 반지하(Banziha)"
 # Description
 description: "반지하(Banjiha) — the half-underground apartment made famous by Parasite. A Korean dev climbed out of one, discovered a bug in Korean housing law, And is currently submitting a pull request to the Supreme Court. AI, Engineering, and a patch that could change how 50 million people live."
 # The subpath of your site, e.g. /blog, for generating urls
-baseurl: /
+baseurl: ""
 
 # Sass
 sass:
@@ -63,6 +63,9 @@ github_url: "https://github.com/banziha104"
 paginate: 4
 paginate_path: '/blog/page:num/'
 plugins: [jekyll-paginate]
+
+exclude:
+  - edit
 
 permalink: pretty
 markdown: kramdown
