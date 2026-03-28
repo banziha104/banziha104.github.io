@@ -15,7 +15,7 @@ sass:
   style: compressed
 
 # The base hostname & protocol of your site for where absolute urls are needed
-url: "http://banziha104.github.io"
+url: "https://banziha104.github.io"
 
 # Site navigation - each item must have a title and a url.
 navigation:
@@ -30,17 +30,17 @@ navigation:
 disqus: "banziha104"
 
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
-google_analytics: "UA-162138428-1"
+google_analytics: "G-NMXJJ5QFJE"
 
 # Author information
 author_name: "Young-jun Lee"
 author_bio: "Server & AI dev at SNOW Corp. I build things, fix broken systems, and occasionally make legal history. Currently filing a Pull Request to Korean law — because the wrong person got woken up."
-author_url: "http://banziha104.github.io"
+author_url: "https://banziha104.github.io"
 author_location: "Seongnam, Republic of Korea"
 author_image: /images/authorimage.jpeg
 
 # Sidebar Add banner
-banner_url: "http://banziha104.github.io"
+banner_url: "https://banziha104.github.io"
 banner_image: images/banner.jpg
 banner_image_alt: "Alt text"
 
