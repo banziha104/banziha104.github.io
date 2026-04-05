@@ -9,6 +9,20 @@ banner_image: aboutPage.jpeg
 
 <h1 id="blog">What's on this blog</h1>
 
+**Lens** — *How I think*
+> The framework I use to see what actually drives outcomes.
+
+**Survival** — *How I live*
+> In companies, in teams, in relationships.
+
+**Footprint** — *What I've done*
+> What I built, broke, and shipped, 2019~
+
+**Raid** — *What I think*
+> Ideas from a server engineer with no GPU.
+
+**Proof** — *On the record*
+> Coming after the first trial.
 
 --- 
 
