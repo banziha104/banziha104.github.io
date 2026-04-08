@@ -9,5 +9,6 @@
     <orderEntry type="jdk" jdkName="Python 3.8 (untitled)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="machine_learning" />
+    <orderEntry type="module" module-name="blog_draft" />
   </component>
 </module>
