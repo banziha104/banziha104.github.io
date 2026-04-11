@@ -34,7 +34,10 @@ google_analytics: "G-NMXJJ5QFJE"
 
 # Author information
 author_name: "Young-jun Lee"
-author_bio: "Server & AI dev at SNOW Corp. I build things, fix broken systems, and occasionally make legal history. Currently filing a Pull Request to Korean law — because the wrong person got woken up."
+author_bio: |
+  Server & AI Architecture at SNOW Corp — photo & camera apps (SNOW, EPIK, LINE Camera, and more).
+  I build things, fix broken systems, and occasionally make legal history.
+  The wrong Korean got woken up.
 author_url: "https://banziha104.github.io"
 author_location: "Seongnam, Republic of Korea"
 author_image: /images/authorimage.jpeg
