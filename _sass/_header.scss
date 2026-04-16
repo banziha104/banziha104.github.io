@@ -1,5 +1,5 @@
 /**
- * 4. Site Header
+ * 4. Site Header — Hunting Ground (Daylight)
  */
 .site-header {
     padding-bottom: 4.16667em;
@@ -18,27 +18,29 @@
 }
 
 .site-title {
-    color: #fff;
+    color: $black;
+    font-family: $font-primary;
     font-size: 2em;
     font-weight: 700;
     line-height: 1.16667;
     margin: 0 20px 0.33333em 0;
     text-transform: uppercase;
+    letter-spacing: 2px;
 
     a {
-        border-left: 0.27778em solid $accent;
+        border-bottom: 2px solid $accent;
         color: inherit;
-        padding-left: 0.55555em;
+        padding-bottom: 0.15em;
         text-decoration: none;
 
         &:hover {
-            color: $accent-alt;
+            color: $accent;
         }
     }
 }
 
 .site-description {
-    color: $gray;
+    color: $text-muted;
     font-size: 14px;
     font-style: italic;
     line-height: 1.5;

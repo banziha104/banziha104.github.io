@@ -1,11 +1,11 @@
 /**
- * 3. Site Navigation
+ * 3. Site Navigation — Hunting Ground (Daylight)
  */
 .site-nav {
-    background-color: $gray-dark;
-  
+    background-color: $bg-surface;
+
     &:after {
-        background: rgba(0,0,0,.6);
+        background: rgba(0,0,0,.3);
         content: "";
         height: 100vh;
         left: 0;
@@ -38,20 +38,21 @@
 
 .menu-item {
     a {
-        color: $gray;
+        color: $text-muted;
         font-weight: 700;
         letter-spacing: 1px;
         text-decoration: none;
         text-transform: uppercase;
+        border-bottom: none;
 
         &:hover {
-            color: $accent;
+            color: $black;
         }
     }
 
     &.current {
         a {
-            color: $accent;
+            color: $black;
         }
     }
 }
@@ -69,7 +70,7 @@
     padding: 0;
 
     .button {
-        color: $gray-light;
+        color: $text-muted;
         margin-left: 4px;
     }
 }
@@ -90,11 +91,11 @@
     }
 
     .menu-item {
-        border-left: 2px solid rgba($gray,.15);
+        border-left: 1px solid $border;
         margin: 1.33333em 0;
         padding-left: 15px;
         padding-right: 15px;
-  
+
         &:first-child {
             border: 0;
             padding-left: 0;
@@ -105,7 +106,7 @@
 @media only screen and (max-width: 800px) {
     #menu-show {
         background: 0;
-        color: $gray;
+        color: $text-muted;
         padding: 0 0 0 20px;
         position: relative;
 
@@ -123,7 +124,7 @@
     }
 
     .menu-item {
-        border-top: 2px solid rgba($gray,.15);
+        border-top: 1px solid $border;
 
         a {
             display: block;
@@ -138,7 +139,7 @@
     .menu-panel {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        background-color: $gray-darker;
+        background-color: $bg;
         bottom: 0;
         left: -100%;
         max-width: 360px;
@@ -181,7 +182,7 @@
     }
 
     .menu-panel-top {
-        background-color: $gray-dark;
+        background-color: $bg-surface;
         text-align: right;
     }
 }

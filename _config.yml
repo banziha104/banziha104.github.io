@@ -7,7 +7,7 @@ tagline: "Don't piss off this Korean who climbed out of 반지하(Banziha)"
 # Description
 description: "반지하(Banjiha) — the half-underground apartment made famous by Parasite. A Korean dev climbed out of one, discovered a bug in Korean housing law, And is currently submitting a pull request to the Supreme Court. AI, Engineering, and a patch that could change how 50 million people live."
 # The subpath of your site, e.g. /blog, for generating urls
-baseurl: /
+baseurl: ""
 
 # Sass
 sass:
@@ -15,7 +15,7 @@ sass:
   style: compressed
 
 # The base hostname & protocol of your site for where absolute urls are needed
-url: "http://banziha104.github.io"
+url: "https://banziha104.github.io"
 
 # Site navigation - each item must have a title and a url.
 navigation:
@@ -30,17 +30,20 @@ navigation:
 disqus: "banziha104"
 
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
-google_analytics: "UA-162138428-1"
+google_analytics: "G-NMXJJ5QFJE"
 
 # Author information
 author_name: "Young-jun Lee"
-author_bio: "Server & AI dev at SNOW Corp. I build things, fix broken systems, and occasionally make legal history. Currently filing a Pull Request to Korean law — because the wrong person got woken up."
-author_url: "http://banziha104.github.io"
+author_bio: |
+  Server & AI Architecture at SNOW Corp — photo & camera apps (SNOW, EPIK, LINE Camera, and more).
+  I build things, fix broken systems, and occasionally make legal history.
+  The wrong Korean got woken up.
+author_url: "https://banziha104.github.io"
 author_location: "Seongnam, Republic of Korea"
 author_image: /images/authorimage.jpeg
 
 # Sidebar Add banner
-banner_url: "http://banziha104.github.io"
+banner_url: "https://banziha104.github.io"
 banner_image: images/banner.jpg
 banner_image_alt: "Alt text"
 
@@ -54,15 +57,18 @@ github_url: "https://github.com/banziha104"
 #codepen_url: "https://codepen.io/"
 #dribbble_url: "https://dribbble.com/"
 #medium_url: "https://medium.com/"
-#instagram_url: "https://www.instagram.com/"
+instagram_url: "https://www.instagram.com/banziha104"
 #pinterest_url: "https://www.pinterest.com/"
-#linkedin_url: "https://www.linkedin.com/"
+linkedin_url: "https://www.linkedin.com/in/young-jun-lee-529784157/"
 #weibo_url: "https://www.weibo.com/"
 
 # http://jekyllrb.com/docs/pagination/
 paginate: 4
 paginate_path: '/blog/page:num/'
 plugins: [jekyll-paginate]
+
+exclude:
+  - edit
 
 permalink: pretty
 markdown: kramdown
