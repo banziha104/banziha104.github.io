@@ -1,11 +1,11 @@
 # Site title
-title: "쉽생코"
+title: "Problem First"
 
 # Tagline next to the site title
-tagline: "쉽게 생각해보는 코딩"
+tagline: "Tools are just tools."
 
 # Description
-description: "쉽게 생각해보는 코딩"
+description: "Notes from a problem-solver. I don't pick problems that fit my tools — I pick the tools that fit the problem, and build them when they don't exist. Server, AI, and whatever the work actually needs."
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl: ""
 
@@ -33,10 +33,10 @@ disqus: "banziha104"
 google_analytics: "G-NMXJJ5QFJE"
 
 # Author information - author info at the bottom of the post
-author_name: "banziha104"
-author_bio: "개발중"
+author_name: "Young-jun Lee"
+author_bio: "Server & AI Architect at SNOW Corp. I don't define myself by a stack — I become what the problem needs."
 author_url: "https://banziha104.github.io"
-author_location: "Pangyo, Republic of Korea"
+author_location: "Seongnam, Republic of Korea"
 author_image: /images/authorimage.jpeg
 
 # Sidebar Add banner
