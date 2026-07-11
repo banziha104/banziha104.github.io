@@ -1,27 +1,25 @@
 /**
- * 1. General — Hunting Ground (Daylight)
+ * 1. General
  */
 html {
     font-size: 112.5%;
-    font-family: $font-body;
+    font-family: $font-primary;
 }
 
 body {
-    background-color: $bg;
-    color: $text;
+    background-color: $gray-darker;
+    color: $gray;
     line-height: 1.66667;
 }
 
 a {
-    color: $text-muted;
-    text-decoration: none;
-    border-bottom: 1px solid $border;
-    -webkit-transition: color .3s, border-color .3s;
-    transition: color .3s, border-color .3s;
+    color: $accent;
+    text-decoration: underline;
+    -webkit-transition: color .3s;
+    transition: color .3s;
 
     &:hover {
-        color: $accent;
-        border-bottom-color: $accent;
+        color: $accent-alt;
     }
 }
 
@@ -31,8 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: $black;
-    font-family: $font-primary;
+    color: $gray-darker;
     font-weight: 700;
     line-height: 1.16667;
 
@@ -84,16 +81,16 @@ address {
 
 mark,
 ins {
-    background-color: rgba($accent, .15);
-    color: $black;
+    background-color: rgba($gray-light,.3);
+    color: $gray-darker;
     padding: 0 3px;
     text-decoration: none;
 }
 
 pre {
-    border-top: 1px solid $border;
-    background-color: $bg-surface;
-    color: $text;
+    border-top: 2px solid rgba($gray-light,.3);
+    background-color: rgba($gray-light,.15);
+    color: $gray-darker;
     font-size: 0.88889em;
     line-height: 1.5;
     margin-bottom: 1.875em;
@@ -104,8 +101,8 @@ pre {
     word-wrap: break-word;
 
     &:before {
-        background-color: $border;
-        color: $text-dim;
+        background-color: rgba($gray-light,.3);
+        color: $gray;
         content: "</>";
         font-size: 0.875em;
         padding: 0.25em 0.35em;
@@ -117,14 +114,12 @@ pre {
 
 blockquote {
     border-left: 3px solid $accent;
-    background-color: $bg-elevated;
-    color: $text;
-    font-size: 16px;
-    font-style: normal;
-    letter-spacing: 0.02em;
-    line-height: 1.7;
+    color: $gray-darker;
+    font-size: 1.11111em;
+    font-style: italic;
+    line-height: 1.5;
     margin: 1.5em 0;
-    padding: 1em 1.25em 1em 30px;
+    padding: 0 0 0 30px;
 
     &:first-child {
         margin-top: 0;
@@ -140,7 +135,7 @@ blockquote {
 
     small,
     cite {
-        color: $text-muted;
+        color: $gray;
         display: block;
         font-size: 0.8em;
         font-style: italic;
@@ -177,7 +172,7 @@ li > ol {
 }
 
 table {
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid rgba($gray-light,.3);
     border-collapse: collapse;
     font-size: 0.88889em;
     line-height: 1.5;
@@ -196,13 +191,13 @@ caption {
 
 th,
 td {
-    border-top: 1px solid $border;
+    border-top: 1px solid rgba($gray-light,.3);
     padding: 0.5em;
 }
 
 th {
-    background-color: $bg-surface;
-    color: $black;
+    background-color: rgba($gray-light,.15);
+    color: $gray-darker;
     font-weight: 700;
 }
 
@@ -212,15 +207,15 @@ th {
 }
 
 hr {
-    background-color: $border;
+    background-color: rgba($gray-light,.3);
     border: 0;
-    height: 1px;
+    height: 2px;
     margin: 1.66667em 0;
 }
 
 /* Form fields */
 label {
-    color: $black;
+    color: $gray-darker;
     font-size: 0.88889em;
 }
 
@@ -233,14 +228,14 @@ input[type="search"],
 input[type="url"],
 select,
 textarea {
-    background: $white;
-    border: 1px solid $border;
+    background: #fff;
+    border: 2px solid rgba($gray-light,.3);
     border-radius: 0;
     box-shadow: none;
     box-sizing: border-box;
-    color: $text;
+    color: $gray;
     display: block;
-    font-family: $font-body;
+    font-family: $font-primary;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -251,7 +246,6 @@ textarea {
 
     &:focus {
         outline: 0;
-        border-color: $text-dim;
     }
 }
 
@@ -265,24 +259,24 @@ textarea {
 
 /* Placeholder text */
 ::-webkit-input-placeholder {
-    color: $text-dim;
+    color: $gray-light;
 }
 
 ::-moz-placeholder {
-    color: $text-dim;
+    color: $gray-light;
     opacity: 1;
 }
 
 :-ms-input-placeholder {
-    color: $text-dim;
+    color: $gray-light;
 }
 
 ::-ms-input-placeholder {
-    color: $text-dim;
+    color: $gray-light;
 }
 
 ::placeholder {
-    color: $text-dim;
+    color: $gray-light;
 }
 
 /* Buttons */
@@ -291,12 +285,12 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 .button {
-    background-color: transparent;
-    border: 1px solid $text-muted;
+    background-color: $accent;
+    border: 0;
     border-radius: 0;
     box-sizing: border-box;
     box-shadow: none;
-    color: $text-muted;
+    color: #fff;
     cursor: pointer;
     display: inline-block;
     font-size: 12px;
@@ -314,9 +308,8 @@ input[type="reset"],
     &:hover,
     &:focus,
     &:active {
-        background-color: $black;
-        border-color: $black;
-        color: $bg;
+        background-color: $accent-alt;
+        color: #fff;
         outline: 0;
     }
 
@@ -339,19 +332,19 @@ input[type="reset"],
     }
 
     &.button-fill-horz {
-        background: linear-gradient(to right, $black 50%, transparent 50%);
+        background: linear-gradient(to right, $accent 50%, rgba($gray,.15) 50%);
         background-color: transparent;
         background-position: right bottom;
         background-repeat: no-repeat;
         background-size: 200% 100%;
-        color: $text-muted;
+        color: $gray;
         -webkit-transition: background-position .3s, color .3s;
         transition: background-position .3s, color .3s;
-
+    
         &:hover,
         &:focus,
         &:active {
-            color: $bg;
+            color: #fff;
             background-position: left bottom;
         }
     }
@@ -505,14 +498,14 @@ a {
 
 /* Text selection */
 ::-moz-selection {
-    background-color: rgba($accent, .25);
-    color: $black;
+    background-color: rgba($gray-light,.3);
+    color: $gray-darker;
     text-shadow: none;
 }
 
 ::selection {
-    background-color: rgba($accent, .25);
-    color: $black;
+    background-color: rgba($gray-light,.3);
+    color: $gray-darker;
     text-shadow: none;
 }
 

@@ -1,8 +1,8 @@
 /**
- * 5.2. Comments — Hunting Ground (Daylight)
+ * 5.2. Comments
  */
 .comments-area {
-    background-color: $white;
+    background-color: #fff;
     margin-bottom: 3.33333em;
     margin-top: 2.22222em;
     padding-bottom: 3.33333em;
@@ -10,7 +10,7 @@
 }
 
 .comments-title {
-    border-bottom: 1px solid $border;
+    border-bottom: 2px solid rgba($gray-light,.3);
     font-size: 1.11111em;
     text-transform: uppercase;
     letter-spacing: 1px;
